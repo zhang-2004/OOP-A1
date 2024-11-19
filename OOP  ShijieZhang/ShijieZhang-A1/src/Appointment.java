@@ -4,10 +4,10 @@ public class Appointment {
     private String preferredTimeSlot;
     private HealthProfessional selectedDoctor;
 
-    // 默认构造函数
+    // Default constructor
     public Appointment() {}
 
-    // 第二个构造函数
+    // The second constructor
     public Appointment(String patientName, String phoneNumber, String preferredTimeSlot, HealthProfessional selectedDoctor) {
         this.patientName = patientName;
         this.phoneNumber = phoneNumber;
@@ -15,7 +15,7 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
-    // Getter 方法
+    // Getter method
     public String getPatientName() {
         return patientName;
     }
@@ -32,7 +32,7 @@ public class Appointment {
         return selectedDoctor;
     }
 
-    // 打印所有实例变量的方法（保留，但不在此输出中使用）
+    // A method to print all instance variables
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

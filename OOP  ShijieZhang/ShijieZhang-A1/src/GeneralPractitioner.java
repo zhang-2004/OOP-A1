@@ -1,20 +1,20 @@
 public class GeneralPractitioner extends HealthProfessional {
-    // 额外的实例变量（如果需要）
-    // 例如：专业领域等
+    // Additional instance variables (if needed)
+    // For example: professional field, etc
     private String specialty;
 
-    // 默认构造函数
+    // Default constructor
     public GeneralPractitioner() {
         super();
     }
 
-    // 第二个构造函数
+    // The second constructor
     public GeneralPractitioner(int id, String name, String specialty) {
         super(id, name, "General Practitioner");
         this.specialty = specialty;
     }
 
-    // 打印医疗专业人员详细信息的方法
+    // Ways to print the details of a medical professional
     @Override
     public String toString() {
         StringBuilder jie = new StringBuilder(super.toString());

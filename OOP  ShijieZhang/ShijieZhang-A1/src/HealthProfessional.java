@@ -3,18 +3,18 @@ public class HealthProfessional {
     protected String name;
     protected String description;
 
-    // 默认构造函数
+    // Default constructor
     public HealthProfessional() {
     }
 
-    // 第二个构造函数
+    // The second constructor
     public HealthProfessional(int id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    // 打印所有实例变量的方法
+    // A method to print all instance variables
     @Override
     public String toString() {
         StringBuilder jie = new StringBuilder();

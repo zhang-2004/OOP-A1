@@ -4,24 +4,24 @@ public class Specialist extends HealthProfessional {
     private String specialty;
     private String hospitalName;
 
-    // 默认构造函数
+    // Default constructor
     public Specialist() {
         super();
     }
 
-    // 第二个构造函数
+    // The second constructor
     public Specialist(int id, String name, String specialty, String hospitalName) {
         super(id, name, "Specialist");
         this.specialty = specialty;
         this.hospitalName = hospitalName;
     }
 
-    // 简化构造函数，仅用于本次作业
+    //Simplifying the constructor
     public Specialist(int id, String name, String specialty) {
         this(id, name, specialty, "General Hospital");
     }
 
-    // 打印医疗专业人员详细信息的方法
+    // Ways to print the details of a medical professional
     @Override
     public String toString() {
         StringBuilder jie = new StringBuilder(super.toString().replace("Description: Specialist", "Description: Medical Specialist")); // 修改描述以区分

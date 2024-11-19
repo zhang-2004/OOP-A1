@@ -5,12 +5,12 @@
 
 import java.util.ArrayList;
 
-// 假设 HealthProfessional, GeneralPractitioner, Specialist, 和 Appointment 类已经正确实现
-// 且每个类都有合适的构造函数和 toString() 方法
+// It is assumed that the HealthProfessional, GeneralPractitioner, Specialist, and Appointment classes have been implemented correctly
+// And each class has a suitable constructor and toString() method
 
 public class AssignmentOne {
     public static void main(String[] args) {
-        // 第 3 部分 - 使用类和对象
+        // Part 3 - Working with Classes and Objects
         HealthProfessional gp1 = new GeneralPractitioner(322, "Dr. Zhang", "General Practitioner");
         HealthProfessional gp2 = new GeneralPractitioner(252, "Dr. Liu", "Family Medicine Specialist");
         HealthProfessional specialist1 = new Specialist(355, "Dr. Hu", "Cardiologist");
@@ -25,7 +25,7 @@ public class AssignmentOne {
         System.out.println(gp3.toString());
         System.out.println("--------------------------------");
 
-        // 第 5 部分 - 预约收款（这里应该是“预约集合”或“预约列表”的意思）
+        // Section 5 - Appointment Collection (this should mean "Appointment Collection" or "Reservation List")
         ArrayList<Appointment> appointments = new ArrayList<>();
 
         appointments.add(new Appointment("Shijie Zhang", "151-006-5372", "09:00", gp1));
@@ -38,7 +38,7 @@ public class AssignmentOne {
         printExistingAppointments(appointments);
     }
 
-    // 打印现有预约的方法
+    // How to print an existing appointment
     public static void printExistingAppointments(ArrayList<Appointment> appointments) {
         if (appointments.isEmpty()) {
             System.out.println("No existing appointments.");
@@ -50,7 +50,7 @@ public class AssignmentOne {
         }
     }
 
-    // 取消预约的方法
+    // How to cancel your reservation
     public static void cancelBooking(ArrayList<Appointment> appointments, String phoneNumber) {
         boolean found = false;
         for (int i = 0; i < appointments.size(); i++) {
